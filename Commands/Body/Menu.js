@@ -15,11 +15,12 @@ module.exports = {
       .setThumbnail('https://i.ibb.co/TMhK0Bwk/40177153-lain-wallpapers.jpg')
       .addFields(
         { name: 'Maneger', value: 'Config from Server && Canais' },
-        { name: '\u200B', value: '\u200B' },
-        { name: '\u200B', value: '\u200B' },
         { name: 'Downloads', value: 'Medias && Audios', inline: true },
+        { name: 'Chat', value: 'Pergunte o que quiser', inline: true },
+        { name: '\u200B', value: '\u200B' },
+       
       )
-      .addFields({ name: 'Chat', value: 'Pergunte o que quiser', inline: true })
+      .addFields({ name: '\u200B', value: '\u200B' })
       .setImage("https://i.ibb.co/4wzkc4Fz/61-Kow0-R4-DEL-AC-UF894-1000-QL80.jpg")
       .setTimestamp()
       .setFooter({ text: 'Criado por Naylor-C', iconURL: 'https://i.ibb.co/r2ZPwg2Q/images.jpg' });
