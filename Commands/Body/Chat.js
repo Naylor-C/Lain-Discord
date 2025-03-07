@@ -7,7 +7,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("chat")
     .setDescription("retorna uma messagem")
-    .addStringOption( string => string
+    .addStringOption((string) => string
       .setName("Input")
       .setDescription("Digite Sua Pergunta")
       .setRequired(true)               
