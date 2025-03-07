@@ -3,7 +3,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('downloads')
+        .setName('maneger')
         .setDescription('Replies with menu!'),
     async execute(interaction) {
      const Menu = new EmbedBuilder()
