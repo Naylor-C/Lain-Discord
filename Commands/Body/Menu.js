@@ -15,8 +15,8 @@ module.exports = {
       .setThumbnail('https://i.ibb.co/TMhK0Bwk/40177153-lain-wallpapers.jpg')
       .addFields(
         { name: 'Maneger', value: 'Config from Server && Canais' },
-        { name: 'Downloads', value: 'Medias && Audios', inline: true },
         { name: 'Chat', value: 'Pergunte o que quiser', inline: true },
+        { name: '\u200B', value: '\u200B' },
         { name: '\u200B', value: '\u200B' },
        
       )
