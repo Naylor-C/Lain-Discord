@@ -8,8 +8,10 @@ module.exports = {
     .setName("chat")
     .setDescription("retorna uma messagem")
     .addStringOption( string => string
-    .setName("Input")
-    .setDescription("Digite Sua Pergunta")),
+      .setName("Input")
+      .setDescription("Digite Sua Pergunta")
+      .setRequired(true)               
+     ),
 
  async execute (interaction) {
    try {
