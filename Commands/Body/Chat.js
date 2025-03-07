@@ -11,12 +11,15 @@ module.exports = {
     .setName("Input")
     .setDescription("Digite Sua Pergunta")),
 
-  async execute (interaction) {
-    const I = interaction.options.getString("Input");
-    const result = await model.generateContent(I);
-    const R = result.response.text();
-   
-    await interaction.reply(R);
-    
+ async execute (interaction) {
+   try {
+      const I = interaction.options.getString("Input");
+      const result = await model.generateContent(I);
+      const R = result.response.text();
+      await interaction.reply(R);
+     
+    } catch (e) {
+     await interaction.reply("error a retornar messagem");
+    }  
   },
 };
