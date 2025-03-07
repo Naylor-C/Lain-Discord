@@ -11,7 +11,7 @@ module.exports = {
     .setName("Input")
     .setDescription("Digite Sua Pergunta")),
 
-  async function execute (interaction) {
+  async execute (interaction) {
     const I = interaction.options.getString("Input");
     const result = await model.generateContent(I);
     const R = result.response.text();
