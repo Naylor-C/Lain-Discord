@@ -8,20 +8,24 @@ module.exports = {
     .setName("chat")
     .setDescription("retorna uma messagem")
     .addStringOption((string) => string
-      .setName("Input")
+      .setName("input")
       .setDescription("Digite Sua Pergunta")
       .setRequired(true)               
      ),
 
  async execute (interaction) {
    try {
-      const I = interaction.options.getString("Input");
+      const I = interaction.options.getString("input");
+      await interaction.deferReply();
       const result = await model.generateContent(I);
-      const R = result.response.text();
-      await interaction.reply(R);
+      const R1 = result.response.text();
+      const R2 = R1.slice(0, 1980);
+      // Enviar a resposta de volta ao usuário
+      await interaction.followUp(R2);
      
     } catch (e) {
-     await interaction.reply("error a retornar messagem");
+      console.log(e);
+     await interaction.followUp("error a retornar messagem");
     }  
   },
 };
