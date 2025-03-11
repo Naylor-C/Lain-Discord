@@ -1,6 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
-const { Client, Collection, GatewayIntentBits, MessageFlags } = require('discord.js');
+const { Client, Collection, GatewayIntentBits, } = require('discord.js');
 const { token } = require('./config.json');
 
 const client = new Client({
@@ -44,3 +44,6 @@ for (const file of eventFiles) {
 }
 
 client.login(token);
+
+
+//-------------------------------------Banco De Dados-------------------------------------------//
