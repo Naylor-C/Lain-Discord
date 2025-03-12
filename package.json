@@ -4,6 +4,7 @@
     "discord.js": "^14.18.0",
     "mercadopago": "^2.3.0",
     "sqlite": "^3.0.6",
+    "tiktok-scraper": "^1.4.36",
     "uuid": "^11.1.0"
   }
 }
