@@ -3,8 +3,10 @@
     "@google/generative-ai": "^0.24.0",
     "discord.js": "^14.18.0",
     "mercadopago": "^2.3.0",
+    "rahad-all-downloader": "^2.1.18",
     "sqlite": "^3.0.6",
     "tiktok-scraper": "^1.4.36",
-    "uuid": "^11.1.0"
+    "uuid": "^11.1.0",
+    "ytdl-mp3": "^5.2.2"
   }
 }

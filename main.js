@@ -9,7 +9,8 @@ const client = new Client({
 		GatewayIntentBits.GuildMessages,
 		GatewayIntentBits.MessageContent,
 		GatewayIntentBits.GuildMembers,
-	],
+	        GatewayIntentBits.GuildPresences
+	]
 });
 
 client.commands = new Collection();
@@ -44,6 +45,3 @@ for (const file of eventFiles) {
 }
 
 client.login(token);
-
-
-//-------------------------------------Banco De Dados-------------------------------------------//
