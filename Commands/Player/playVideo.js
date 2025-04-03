@@ -20,9 +20,9 @@ async function F (x) {
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("video")
-        .setDescription("Baixar vídeo")
-        .addStringOption(option =>
-            option.setName("add_link")
+        .setDescription("download vídeo")
+        .addStringOption(X => X
+            .setName("add_link")
                 .setDescription("Digite o link do vídeo")
                 .setRequired(true)
         ),
@@ -49,7 +49,9 @@ module.exports = {
 
         } catch (e) {
             console.error(e);
-            await interaction.editReply({ content: `❌ Erro ao obter o vídeo: ${e.message}` });
+            await interaction.editReply({ 
+             content: `❌ Erro ao obter o vídeo: ${e.message} Baixar vídeo Supported platforms are YouTube, Facebook, TikTok, Pinterest, Terabox, Instagram, Threads, and Twitter.` 
+            });
         }
     },
 };
